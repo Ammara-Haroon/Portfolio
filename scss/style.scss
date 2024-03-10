@@ -1,24 +1,32 @@
 @use "./normalize.scss";
 @use "./partials/variables" as var;
 
+* {
+  margin: 0;
+  padding: 0;
+  color: var.$light-slate-grey;
+}
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  //border: 1px solid red;
-  background-color: var.$mouse-grey;
-
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: flex-start;
+  //background-color: var.$mouse-grey;
+  flex-wrap: wrap;
   &__name-logo {
     color: var.$rose-pink;
     font-size: xxx-large;
     //border: 1px solid red;
     margin: 0;
     padding: 5px;
+    background-color: var.$light-mouse-grey;
   }
 
   &__nav {
-    width: 50%;
-    //border: 1px solid red;
+    //width: 50%;
+    border: 1px solid var.$dark-deep-blue;
+    //border: 2px solid var.$rose-pink;
+    background-color: var.$mouse-grey;
+    //border: 2px solid var.$deep-blue;
     align-self: center;
     &__menu-list {
       display: flex;
@@ -28,6 +36,60 @@
       list-style-type: none;
       font-weight: bold;
       //border: 1px solid blue;
+      margin: 0;
+      padding: 5px;
+    }
+  }
+}
+
+.content {
+  //display: flex;
+  //flex-direction: column;
+  //align-items: flex-end;
+  //justify-content: center;
+  //align-items: center;
+  color: var.$deep-blue;
+  &__landing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    border: 1px solid black;
+    background-color: var.$light-mouse-grey;
+    //background-color: #dac0a3;
+    //background-color: #f8f0e5;
+    //background-color: #eadbc8;
+    &__container {
+      height: 100vh;
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      //border: 1px solid red;
+      margin-right: 0.9em;
+      //background-color: var.$mouse-grey;
+      &__text {
+        font-size: large;
+        font-weight: bold;
+        //border: 1px solid blue;
+      }
+
+      &__info {
+        //border: 1px solid red;
+        &__name {
+          font-size: xxx-large;
+          //border: 1px solid blue;
+          text-align: right;
+          margin-top: 1em;
+          color: var.$slate-grey;
+          margin-bottom: 0.1em;
+        }
+        &__title {
+          font-size: x-large;
+          text-align: right;
+          //border: 1px solid blue;
+        }
+      }
     }
   }
 }
