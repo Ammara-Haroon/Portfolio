@@ -1,0 +1,33 @@
+@use "./normalize.scss";
+@use "./partials/variables" as var;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  //border: 1px solid red;
+  background-color: var.$mouse-grey;
+
+  &__name-logo {
+    color: var.$rose-pink;
+    font-size: xxx-large;
+    //border: 1px solid red;
+    margin: 0;
+    padding: 5px;
+  }
+
+  &__nav {
+    width: 50%;
+    //border: 1px solid red;
+    align-self: center;
+    &__menu-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      font-weight: bold;
+      //border: 1px solid blue;
+    }
+  }
+}
