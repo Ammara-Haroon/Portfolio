@@ -357,7 +357,7 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 0.9em;
+  margin-right: 1em;
 }
 .content__landing-page__container__text {
   font-size: large;
@@ -373,6 +373,38 @@ template {
 .content__landing-page__container__info__title {
   font-size: x-large;
   text-align: right;
+}
+.content__skills-page {
+  background-color: #e4dcc4;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.content__skills-page__heading {
+  margin: 1em 1em 1em 0.4em;
+}
+.content__skills-page__gallery {
+  align-self: center;
+  margin: 1em 1em 4em 1em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.content__skills-page__gallery__card {
+  margin: 1em;
+}
+.content__skills-page__gallery__card__img {
+  width: 4em;
+  height: 4em;
+}
+.content__skills-page__gallery__card__caption {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.footer__copyright {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
