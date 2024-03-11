@@ -374,16 +374,23 @@ template {
   font-size: x-large;
   text-align: right;
 }
-.content__skills-page {
-  background-color: #e4dcc4;
+.content__section {
   display: flex;
   flex-direction: column;
   border: 1px solid red;
 }
-.content__skills-page__heading {
-  margin: 1em 1em 1em 0.4em;
+.content__section--mouse-grey {
+  background-color: #e4dcc4;
 }
-.content__skills-page__gallery {
+.content__section--light-mouse-grey {
+  background-color: #f9f5eb;
+}
+.content__section__heading {
+  margin: 1em 1em 1em 0.4em;
+  font-size: x-large;
+  font-weight: bold;
+}
+.content__section__gallery {
   align-self: center;
   margin: 1em 1em 4em 1em;
   display: flex;
@@ -391,16 +398,34 @@ template {
   flex-wrap: wrap;
   width: 90%;
 }
-.content__skills-page__gallery__card {
+.content__section__gallery__card {
   margin: 1em;
 }
-.content__skills-page__gallery__card__img {
+.content__section__gallery__card--bordered {
+  border: 3px solid #251749;
+  border-radius: 5px;
+}
+.content__section__gallery__card__img--small {
   width: 4em;
   height: 4em;
 }
-.content__skills-page__gallery__card__caption {
+.content__section__gallery__card__img--large {
+  width: 15em;
+  height: 20em;
+}
+.content__section__gallery__card__caption {
   font-weight: bold;
   font-size: medium;
+  text-align: center;
+}
+.content__section__gallery__card__caption--large {
+  font-size: large;
+  padding: 0.2em;
+}
+.content__section__gallery__card__description {
+  word-wrap: normal;
+  width: 14.6em;
+  padding: 0.2em;
 }
 
 .footer__copyright {

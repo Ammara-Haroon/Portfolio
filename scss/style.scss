@@ -93,16 +93,26 @@
     }
   }
 
-  &__skills-page {
-    background-color: var.$mouse-grey;
+  &__section {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
 
+    &--mouse-grey {
+      background-color: var.$mouse-grey;
+    }
+
+    &--light-mouse-grey {
+      background-color: var.$light-mouse-grey;
+    }
+
     &__heading {
       margin: 1em 1em 1em 0.4em;
+      font-size: x-large;
+      font-weight: bold;
       // border: 1px solid red;
     }
+
     &__gallery {
       align-self: center;
       //border: 1px solid red;
@@ -114,18 +124,43 @@
       //justify-items: ceneter;
       &__card {
         margin: 1em;
+        //border: 1px solid red;
+        &--bordered {
+          border: 3px solid var.$dark-deep-blue;
+          border-radius: 5px;
+        }
+
         &__img {
-          width: 4em;
-          height: 4em;
+          &--small {
+            width: 4em;
+            height: 4em;
+          }
+          &--large {
+            width: 15em;
+            height: 20em;
+          }
         }
         &__caption {
           font-weight: bold;
           font-size: medium;
+          text-align: center;
+          &--large {
+            font-size: large;
+            padding: 0.2em;
+          }
+        }
+        &__description {
+          //width: 100%;
+          word-wrap: normal;
+          width: 14.6em;
+          padding: 0.2em;
+          //border: 1px solid red;
         }
       }
     }
   }
 }
+
 .footer {
   &__copyright {
     text-align: center;
