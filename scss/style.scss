@@ -169,6 +169,31 @@
         font-weight: bold;
       }
     }
+
+    &__form {
+      display: grid;
+      grid-template-rows: 1fr 1fr 4fr;
+      align-self: center;
+      border: 1px solid var.$slate-grey;
+      width: 80%;
+
+      &__input {
+        //border: 1px solid salmon;
+        display: grid;
+        gap: 0.2em;
+        grid-template-columns: 1fr 5fr;
+
+        &__label {
+          padding-top: 0.9em;
+          //border: 1px solid rebeccapurple;
+          //color: red;
+          text-align: right;
+          &--top {
+            padding: 0;
+          }
+        }
+      }
+    }
   }
 }
 

@@ -435,6 +435,25 @@ template {
 .content__section__text--bold {
   font-weight: bold;
 }
+.content__section__form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr;
+  align-self: center;
+  border: 1px solid rgb(40, 40, 40);
+  width: 80%;
+}
+.content__section__form__input {
+  display: grid;
+  gap: 0.2em;
+  grid-template-columns: 1fr 5fr;
+}
+.content__section__form__input__label {
+  padding-top: 0.9em;
+  text-align: right;
+}
+.content__section__form__input__label--top {
+  padding: 0;
+}
 
 .footer__copyright {
   text-align: center;
