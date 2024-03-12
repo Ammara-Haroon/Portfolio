@@ -18,16 +18,16 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
       <h2 class="navbar__name-logo">ah</h2>
       <nav class="navbar__nav">
         <ul class="navbar__nav__menu-list">
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>About Me</li>
-          <li>Contact</li>
+          <li><a href="#landingPage">Home</a></li>
+          <li><a href="#skillsPage">Skills</a></li>
+          <li><a href="#projectsPage">Projects</a></li>
+          <li><a href="#aboutMePage">About Me</a></li>
+          <li><a href="#contactPage">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="content">
-      <section class="content__landing-page">
+      <section id="landingPage" class="content__landing-page">
         <div class="content__landing-page__container">
           <p class="content__landing-page__container__text">I'm</p>
           <div class="content__landing-page__container__info">
@@ -41,7 +41,7 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
         </div>
       </section>
 
-      <section class="content__section content__section--mouse-grey">
+      <section id="skillsPage" class="content__section content__section--mouse-grey">
         <h2 class="content__section__heading">Skills</h2>
         <div class="content__section__gallery">
           <div class="content__section__gallery__card">
@@ -188,9 +188,10 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
         </div>
       </section>
 
-      <section class="content__section content__section--light-mouse-grey">
+      <section id="projectsPage" class="content__section content__section--light-mouse-grey">
         <h2 class="content__section__heading">Projects</h2>
         <div class="content__section__gallery">
+          <a class="content__section__gallery__card--link" href="https://github.com/Ammara-Haroon/portfolio.git" target="_blank">
           <div
             class="content__section__gallery__card content__section__gallery__card--bordered"
           >
@@ -208,7 +209,8 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
               A web-page based Morse-Code Translator in html and JavaScript to
               translate between English and morse code.
             </p>
-          </div>
+          </div></a>
+          <a class="content__section__gallery__card--link" href="https://github.com/Ammara-Haroon/portfolio.git" target="_blank">
           <div
             class="content__section__gallery__card content__section__gallery__card--bordered"
           >
@@ -226,7 +228,8 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
               A web-page based Morse-Code Translator in html and JavaScript to
               translate between English and morse code.
             </p>
-          </div>
+          </div></a>
+          <a class="content__section__gallery__card--link" href="https://github.com/Ammara-Haroon/portfolio.git" target="_blank">
           <div
             class="content__section__gallery__card content__section__gallery__card--bordered"
           >
@@ -244,7 +247,8 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
               A web-page based Morse-Code Translator in html and JavaScript to
               translate between English and morse code.
             </p>
-          </div>
+          </div></a>
+          <a class="content__section__gallery__card--link" href="https://github.com/Ammara-Haroon/portfolio.git" target="_blank">
           <div
             class="content__section__gallery__card content__section__gallery__card--bordered"
           >
@@ -262,7 +266,8 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
               A web-page based Morse-Code Translator in html and JavaScript to
               translate between English and morse code.
             </p>
-          </div>
+          </div></a>
+          <a class="content__section__gallery__card--link" href="https://github.com/Ammara-Haroon/portfolio.git" target="_blank">
           <div
             class="content__section__gallery__card content__section__gallery__card--bordered"
           >
@@ -280,11 +285,11 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
               A web-page based Morse-Code Translator in html and JavaScript to
               translate between English and morse code.
             </p>
-          </div>
+          </div></a>
         </div>
       </section>
 
-      <section class="content__section content-section--mouse-grey">
+      <section id="aboutMePage" class="content__section content-section--mouse-grey">
         <!-- <h2 class="content__section__heading">About Me</h2> -->
         <h2 class="content__section__heading">About Me</h2>
         <p class="content__section__text">
@@ -302,16 +307,20 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
         </p>
       </section>
 
-      <section class="content__section content__section--mouse-grey">
+      <section id="contactPage" class="content__section content__section--mouse-grey">
         <h2 class="content__section__heading">Get in touch !</h2>
         <div class="content__section__gallery">
-          <img
-              class="content__section__gallery__card__img content__section__gallery__card__img--small" src="../assets/github.png" alt="github"/>  
-
+          <a class="content__section__gallery__card--link" href="https://github.com/Ammara-Haroon/portfolio.git" target="_blank">
+            <img
+              class="content__section__gallery__card__img content__section__gallery__card__img--small " src="../assets/github.png" alt="github"/></a>  
+<a class="content__section__gallery__card--link" href="https://www.linkedin.com/in/ammara-haroon-2a64aa1b8/" target="_blank">
+          
               <img
-              class="content__section__gallery__card__img content__section__gallery__card__img--small" src="https://img.icons8.com/fluency/96/linkedin.png" alt="linkedin"/>
+              class="content__section__gallery__card__img content__section__gallery__card__img--small" src="https://img.icons8.com/fluency/96/linkedin.png" alt="linkedin"/></a>
+          <a id="emailIcon" class="content__section__gallery__card--link" href="#contactPage">
           <img
-              class="content__section__gallery__card__img content__section__gallery__card__img--small" src="https://img.icons8.com/ios-filled/50/new-post.png" alt="email"/> 
+              class="content__section__gallery__card__img content__section__gallery__card__img--small" src="https://img.icons8.com/ios-filled/50/new-post.png" alt="email"/></a> 
+              
           </div>
         </div>
       </section>
