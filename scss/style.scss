@@ -169,9 +169,10 @@
         font-weight: bold;
       }
     }
-    #emailIcon:active {
-      border: 1px solid red;
+    #contactForm {
+      display: none;
     }
+
     &__form {
       display: grid;
       grid-template-rows: 1fr 1fr 4fr;

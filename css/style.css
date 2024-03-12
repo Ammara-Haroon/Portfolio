@@ -440,8 +440,8 @@ template {
 .content__section__text--bold {
   font-weight: bold;
 }
-.content__section #emailIcon:active {
-  border: 1px solid red;
+.content__section #contactForm {
+  display: none;
 }
 .content__section__form {
   display: grid;
