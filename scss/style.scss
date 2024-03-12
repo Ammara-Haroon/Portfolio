@@ -158,6 +158,17 @@
         }
       }
     }
+
+    &__text {
+      //border: 1px solid blue;
+      align-self: center;
+      //text-align: center;
+      text-justify: newspaper;
+      width: 80%;
+      &--bold {
+        font-weight: bold;
+      }
+    }
   }
 }
 

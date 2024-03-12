@@ -428,16 +428,12 @@ template {
   padding: 0.2em;
 }
 .content__section__text {
-  align-self: center;
-  text-justify: newspaper;
-  width: 80%;
-}
-.content__section__text--bold {
-  font-weight: bold;
+  border: 1px solid blue;
+  color: red;
 }
 
 .footer__copyright {
   text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css--watch.map */
