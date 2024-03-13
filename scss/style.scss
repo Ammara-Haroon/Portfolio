@@ -5,28 +5,31 @@
   margin: 0;
   padding: 0;
   color: var.$light-slate-grey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .navbar {
-  //display: flex;
-  //justify-content: space-between;
-  //align-items: flex-start;
-  //background-color: var.$mouse-grey;
-  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: var.$mouse-grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
   &__name-logo {
     color: var.$rose-pink;
-    font-size: xxx-large;
+    font-size: xx-large;
     //border: 1px solid red;
-    margin: 0;
-    padding: 5px;
-    background-color: var.$light-mouse-grey;
+    background-color: var.$mouse-grey;
+    //font-family: fantasy;
+    font-family: cursive;
+    padding: 2px;
   }
 
   &__nav {
-    //width: 50%;
-    border: 1px solid var.$dark-deep-blue;
-    //border: 2px solid var.$rose-pink;
+    //border: 1px solid var.$dark-deep-blue;
     background-color: var.$mouse-grey;
-    //border: 2px solid var.$deep-blue;
     align-self: center;
     &__menu-list {
       display: flex;
@@ -34,10 +37,16 @@
       justify-content: space-around;
       align-items: center;
       list-style-type: none;
-      font-weight: bold;
+      //font-weight: bold;
       //border: 1px solid blue;
       margin: 0;
-      padding: 5px;
+      padding: 2px;
+      &__link {
+        text-decoration: none;
+      }
+      &__link:hover {
+        color: var.$rose-pink;
+      }
     }
   }
 }

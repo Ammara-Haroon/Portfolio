@@ -313,20 +313,26 @@ template {
   margin: 0;
   padding: 0;
   color: rgb(70, 70, 70);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .navbar {
-  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #e4dcc4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 .navbar__name-logo {
   color: #ea5455;
-  font-size: xxx-large;
-  margin: 0;
-  padding: 5px;
-  background-color: #f9f5eb;
+  font-size: xx-large;
+  background-color: #e4dcc4;
+  font-family: cursive;
+  padding: 2px;
 }
 .navbar__nav {
-  border: 1px solid #251749;
   background-color: #e4dcc4;
   align-self: center;
 }
@@ -336,9 +342,14 @@ template {
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
-  font-weight: bold;
   margin: 0;
-  padding: 5px;
+  padding: 2px;
+}
+.navbar__nav__menu-list__link {
+  text-decoration: none;
+}
+.navbar__nav__menu-list__link:hover {
+  color: #ea5455;
 }
 
 .content {
