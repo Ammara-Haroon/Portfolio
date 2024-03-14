@@ -318,7 +318,7 @@ template {
 
 .navbar {
   overflow: hidden;
-  background-color: #e4dcc4;
+  background-color: rgb(228, 220, 216);
   position: fixed;
   top: 0;
   width: 100%;
@@ -328,12 +328,12 @@ template {
 .navbar__name-logo {
   color: #ea5455;
   font-size: xx-large;
-  background-color: #e4dcc4;
+  background-color: rgb(228, 220, 216);
   font-family: cursive;
   padding: 2px;
 }
 .navbar__nav {
-  background-color: #e4dcc4;
+  background-color: rgb(228, 220, 216);
   align-self: center;
 }
 .navbar__nav__menu-list {
@@ -359,7 +359,7 @@ template {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  background-color: #f9f5eb;
+  background-color: rgb(249, 245, 235);
 }
 .content__landing-page__container {
   height: 100vh;
@@ -391,17 +391,25 @@ template {
   min-height: 90vh;
   justify-content: center;
 }
+.content__section--small {
+  min-height: 10vh;
+  padding: 0;
+  margin: 0;
+}
 .content__section--mouse-grey {
-  background-color: #e4dcc4;
+  background-color: rgb(220, 210, 196);
 }
 .content__section--light-mouse-grey {
-  background-color: #f9f5eb;
+  background-color: rgb(249, 245, 235);
 }
 .content__section__heading {
   margin: 1em 1em 1em 0.4em;
   font-size: xx-large;
   font-weight: bold;
   text-align: center;
+}
+.content__section__heading--colored {
+  color: #ea5455;
 }
 .content__section__gallery {
   align-self: center;
@@ -412,17 +420,24 @@ template {
   gap: 3em;
   width: 70%;
 }
+.content__section__gallery--colored {
+  background-color: rgb(51, 49, 59);
+}
 .content__section__gallery__card {
   margin: 1em;
 }
-.content__section__gallery__card:hover {
+.content__section__gallery__card--clickable:hover {
   box-shadow: 2px 2px 10px 2px;
+  border-color: #ea5455;
+}
+.content__section__gallery__card--clickable:hover > h3 {
+  color: #ea5455;
 }
 .content__section__gallery__card--link {
   text-decoration: none;
 }
 .content__section__gallery__card--bordered {
-  border: 3px solid #251749;
+  border: 3px solid #3c4f65;
   border-radius: 5px;
 }
 .content__section__gallery__card__img--small {
@@ -432,6 +447,9 @@ template {
 .content__section__gallery__card__img--large {
   width: 15em;
   height: 20em;
+  border: 3px solid #3c4f65;
+  border-left: 0;
+  border-right: 0;
 }
 .content__section__gallery__card__caption {
   font-weight: bold;
@@ -441,20 +459,27 @@ template {
 .content__section__gallery__card__caption--large {
   font-size: large;
   padding: 0.2em;
+  color: rgb(249, 245, 235);
+  background-color: #3c4f65;
 }
 .content__section__gallery__card__description {
   word-wrap: normal;
   width: 14.6em;
+  height: 5em;
   padding: 0.2em;
+  color: #50727b;
 }
 .content__section__text {
   align-self: center;
   text-justify: newspaper;
   width: 70%;
   font-size: 1.25em;
+  font-weight: normal;
+  color: #50727b;
 }
 .content__section__text--bold {
   font-weight: bold;
+  color: #3c4f65;
 }
 .content__section #contactForm {
   display: none;
@@ -463,20 +488,19 @@ template {
   display: grid;
   grid-template-rows: 1fr 1fr 4fr;
   align-self: center;
-  border: 1px solid rgb(51, 49, 59);
-  width: 80%;
+  border: 2px solid rgb(51, 49, 59);
+  border-radius: 7px;
 }
 .content__section__form__input {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.2em;
-  grid-template-columns: 1fr 5fr;
+  justify-content: flex-end;
 }
 .content__section__form__input__label {
   padding-top: 0.9em;
-  text-align: right;
-}
-.content__section__form__input__label--top {
-  padding: 0;
+  text-align: left;
+  padding: 2px;
 }
 
 .footer__copyright {

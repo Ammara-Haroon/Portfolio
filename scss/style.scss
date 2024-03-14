@@ -10,6 +10,7 @@
 .navbar {
   overflow: hidden;
   background-color: var.$mouse-grey;
+  //background-color: var.$light-slate-grey;
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,6 +23,8 @@
     font-size: xx-large;
     //border: 1px solid red;
     background-color: var.$mouse-grey;
+    //background-color: var.$light-slate-grey;
+
     //font-family: fantasy;
     font-family: cursive;
     padding: 2px;
@@ -30,6 +33,7 @@
   &__nav {
     //border: 1px solid var.$dark-deep-blue;
     background-color: var.$mouse-grey;
+    //background-color: var.$light-slate-grey;
     align-self: center;
     &__menu-list {
       display: flex;
@@ -43,6 +47,7 @@
       padding: 2px;
       &__link {
         text-decoration: none;
+        //color: var.$light-mouse-grey;
       }
       &__link:hover {
         color: var.$rose-pink;
@@ -57,6 +62,7 @@
     display: flex;
     flex-direction: row;
     justify-content: right;
+
     //border: 1px solid black;
     background-color: var.$light-mouse-grey;
     &__container {
@@ -101,8 +107,15 @@
     padding: 3em 1em 2em 0;
     min-height: 90vh;
     justify-content: center;
+
+    &--small {
+      min-height: 10vh;
+      padding: 0;
+      margin: 0;
+    }
     &--mouse-grey {
-      background-color: var.$mouse-grey;
+      background-color: var.$mid-grey; //var.$mouse-grey;
+      //background-color: var.$light-slate-grey;
     }
 
     &--light-mouse-grey {
@@ -115,6 +128,9 @@
       font-weight: bold;
       text-align: center;
       // border: 1px solid red;
+      &--colored {
+        color: var.$rose-pink;
+      }
     }
 
     &__gallery {
@@ -126,20 +142,28 @@
       flex-wrap: wrap;
       gap: 3em;
       width: 70%;
+      &--colored {
+        background-color: var.$slate-grey;
+      }
       //justify-items: ceneter;
       &__card {
         margin: 1em;
         //border: 1px solid red;
-        &:hover {
-          box-shadow: 2px 2px 10px 2px;
-          //border: 3px solid var.$slate-grey;
+        &--clickable {
+          &:hover {
+            box-shadow: 2px 2px 10px 2px;
+            border-color: var.$rose-pink;
+          }
+          &:hover > h3 {
+            color: var.$rose-pink;
+          }
         }
         &--link {
           //border: 4px solid red;
           text-decoration: none;
         }
         &--bordered {
-          border: 3px solid var.$dark-deep-blue;
+          border: 3px solid var.$light-slate-grey;
           border-radius: 5px;
         }
 
@@ -151,6 +175,9 @@
           &--large {
             width: 15em;
             height: 20em;
+            border: 3px solid var.$light-slate-grey;
+            border-left: 0;
+            border-right: 0;
           }
         }
         &__caption {
@@ -160,13 +187,17 @@
           &--large {
             font-size: large;
             padding: 0.2em;
+            color: var.$light-mouse-grey;
+            background-color: var.$light-slate-grey;
           }
         }
         &__description {
           //width: 100%;
           word-wrap: normal;
           width: 14.6em;
+          height: 5em;
           padding: 0.2em;
+          color: var.$murky-blue;
           //border: 1px solid red;
         }
       }
@@ -179,9 +210,13 @@
       text-justify: newspaper;
       width: 70%;
       font-size: 1.25em;
-
+      font-weight: normal;
+      color: #50727b;
+      //color: white;
       &--bold {
         font-weight: bold;
+        color: var.$light-slate-grey;
+        //font-style: italic;
       }
     }
     #contactForm {
@@ -192,23 +227,27 @@
       display: grid;
       grid-template-rows: 1fr 1fr 4fr;
       align-self: center;
-      border: 1px solid var.$slate-grey;
-      width: 80%;
+      border: 2px solid var.$slate-grey;
+      border-radius: 7px;
+      //width: 50%;
 
       &__input {
         //border: 1px solid salmon;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 0.2em;
-        grid-template-columns: 1fr 5fr;
+        justify-content: flex-end;
+        //grid-template-columns: 1fr 5fr;
 
         &__label {
           padding-top: 0.9em;
           //border: 1px solid rebeccapurple;
           //color: red;
-          text-align: right;
-          &--top {
-            padding: 0;
-          }
+          text-align: left;
+          padding: 2px;
+          // &--top {
+          //   padding-top: 0;
+          // }
         }
       }
     }
