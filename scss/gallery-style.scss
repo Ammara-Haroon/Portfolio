@@ -1,0 +1,16 @@
+@use "./partials/variables" as var;
+
+.gallery {
+  align-self: center;
+  margin: 1em 1em 4em 1em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3em;
+  width: var.$content-width;
+
+  //modifiers
+  &--small {
+    margin: 0;
+  }
+}

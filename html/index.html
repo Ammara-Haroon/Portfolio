@@ -1,9 +1,3 @@
-<!-- A landing page/section with your name and title on it.
-An About page/section with a little bit about you
-A Tech stacks/skills page/section with all the techs you have learned during the course
-A Project page/section with all your projects (use placeholder images and text at the beginning to render your website as it would with actual projects) - each project should have a little description, a link to a live version and a link to the matching GitHub Repo (using a README.md at the root of the repo to include how you went about coding for that project)
-A Contact page/section with your email, GitHub profile link, LinkedIn profile link -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,396 +12,330 @@ A Contact page/section with your email, GitHub profile link, LinkedIn profile li
     <header class="navbar">
       <h2 class="navbar__name-logo">ah</h2>
       <nav class="navbar__nav">
-        <ul class="navbar__nav__menu-list">
+        <ul class="navbar__nav__menu">
           <li>
-            <a class="navbar__nav__menu-list__link" href="#landingPage">Home</a>
+            <a class="navbar__nav__menu__link" href="#landingPage">Home</a>
           </li>
           <li>
-            <a class="navbar__nav__menu-list__link" href="#skillsPage"
-              >Skills</a
-            >
+            <a class="navbar__nav__menu__link" href="#skillsPage">Skills</a>
           </li>
           <li>
-            <a class="navbar__nav__menu-list__link" href="#projectsPage"
-              >Projects</a
-            >
+            <a class="navbar__nav__menu__link" href="#projectsPage">Projects</a>
           </li>
           <li>
-            <a class="navbar__nav__menu-list__link" href="#aboutMePage"
-              >About Me</a
-            >
+            <a class="navbar__nav__menu__link" href="#aboutMePage">About Me</a>
           </li>
           <li>
-            <a class="navbar__nav__menu-list__link" href="#contactPage"
-              >Contact</a
-            >
+            <a class="navbar__nav__menu__link" href="#contactPage">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="content">
-      <section id="landingPage" class="content__landing-page">
-        <div class="content__landing-page__container">
-          <p class="content__landing-page__container__text">I'm</p>
-          <div class="content__landing-page__container__info">
-            <h1 class="content__landing-page__container__info__name">
-              Ammara Haroon
-            </h1>
-            <h2 class="content__landing-page__container__info__title">
+      <section id="landingPage" class="landing-page">
+        <div class="landing-page__container">
+          <p class="landing-page__container__text">I'm</p>
+          <div class="landing-page__container__info">
+            <h1 class="landing-page__container__info__name">Ammara Haroon</h1>
+            <h2 class="landing-page__container__info__title">
               Junior Software Developer
             </h2>
           </div>
         </div>
       </section>
 
-      <section
-        id="skillsPage"
-        class="content__section content__section--mouse-grey"
-      >
-        <h2 class="content__section__heading">Skills</h2>
-        <div class="content__section__gallery">
-          <div class="content__section__gallery__card">
+      <section id="skillsPage" class="section section--dark">
+        <h2 class="section__heading section__heading--light">Skills</h2>
+        <div class="gallery">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/javascript-programming-language-icon.png"
               alt="Javascript"
             />
-            <p class="content__section__gallery__card__caption">JavaScript</p>
+            <p class="card__caption">JavaScript</p>
           </div>
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/html5-balck-icon.png"
               alt="html5"
             />
-            <p class="content__section__gallery__card__caption">html5</p>
+            <p class="card__caption">html5</p>
           </div>
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/css-icon.png"
               alt="css"
             />
-            <p class="content__section__gallery__card__caption">CSS</p>
+            <p class="card__caption">CSS</p>
           </div>
 
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/sass-icon.png"
               alt="SASS and SCSS"
             />
-            <p class="content__section__gallery__card__caption">SASS/SCSS</p>
+            <p class="card__caption">SASS/SCSS</p>
           </div>
-
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/python-programming-language-icon.png"
               alt="Python"
             />
-            <p class="content__section__gallery__card__caption">Python</p>
+            <p class="card__caption">Python</p>
           </div>
-
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/sql-file-icon.png"
               alt="SQL"
             />
-            <p class="content__section__gallery__card__caption">SQL</p>
+            <p class="card__caption">SQL</p>
           </div>
-
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/xls-file-icon.png"
               alt="Excel"
             />
-            <p class="content__section__gallery__card__caption">Excel</p>
+            <p class="card__caption">Excel</p>
           </div>
-
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img  content__section__gallery__card__img--small"
+              class="card__img  card__img--small"
               src="../assets/github-icon-color.png"
               alt="Github"
             />
-            <p class="content__section__gallery__card__caption">Github</p>
+            <p class="card__caption">Github</p>
           </div>
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img content__section__gallery__card__img--small"
+              class="card__img card__img--small"
               src="../assets/java-programming-language-icon.png"
               alt="JAVA"
             />
-            <p class="content__section__gallery__card__caption">Java</p>
+            <p class="card__caption">Java</p>
           </div>
-          <div class="content__section__gallery__card">
+          <div class="card card--tabbed">
             <img
-              class="content__section__gallery__card__img content__section__gallery__card__img--small"
+              class="card__img card__img--small"
               src="../assets/power-bi-icon.png"
               alt="power-bi"
             />
-            <p class="content__section__gallery__card__caption">PowerBI</p>
+            <p class="card__caption">PowerBI</p>
           </div>
         </div>
       </section>
 
-      <section
-        id="projectsPage"
-        class="content__section content__section--light-mouse-grey"
-      >
-        <h2 class="content__section__heading">Projects</h2>
-        <div class="content__section__gallery">
+      <section id="projectsPage" class="section section--light">
+        <h2 class="section__heading">Projects</h2>
+        <div class="gallery">
           <a
-            class="content__section__gallery__card--link"
+            class="card--link"
             href="https://github.com/Ammara-Haroon/portfolio.git"
             target="_blank"
           >
-            <div
-              class="content__section__gallery__card content__section__gallery__card--bordered content__section__gallery__card--clickable"
-            >
-              <h3
-                class="content__section__gallery__card__caption content__section__gallery__card__caption--large"
-              >
-                Calculator
-              </h3>
+            <div class="card card--bordered card--clickable">
+              <h3 class="card__caption card__caption--large">Calculator</h3>
               <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--large"
+                class="card__img card__img--large"
                 src="../assets/calculator.png"
                 alt=""
               />
-              <p class="content__section__gallery__card__description">
+              <p class="card__description">
                 A web-page based calculator that can perform basic arithmtic
                 operations.
               </p>
-            </div></a
-          >
+            </div>
+          </a>
           <a
-            class="content__section__gallery__card--link"
+            class="card--link"
             href="https://github.com/Ammara-Haroon/portfolio.git"
             target="_blank"
           >
-            <div
-              class="content__section__gallery__card content__section__gallery__card--bordered content__section__gallery__card--clickable"
-            >
-              <h3
-                class="content__section__gallery__card__caption content__section__gallery__card__caption--large"
-              >
+            <div class="card card--bordered card--clickable">
+              <h3 class="card__caption card__caption--large">
                 Coffee Shop Website
               </h3>
               <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--large"
+                class="card__img card__img--large"
                 src="../assets/coffee.png"
                 alt=""
               />
-              <p class="content__section__gallery__card__description">
-                A website for a coffee shop.
-              </p>
-            </div></a
-          >
+              <p class="card__description">A website for a coffee shop.</p>
+            </div>
+          </a>
           <a
-            class="content__section__gallery__card--link"
+            class="card--link"
             href="https://github.com/Ammara-Haroon/portfolio.git"
             target="_blank"
           >
-            <div
-              class="content__section__gallery__card content__section__gallery__card--bordered content__section__gallery__card--clickable"
-            >
-              <h3
-                class="content__section__gallery__card__caption content__section__gallery__card__caption--large"
-              >
+            <div class="card card--bordered card--clickable">
+              <h3 class="card__caption card__caption--large">
                 Morse-Code Translator
               </h3>
               <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--large"
+                class="card__img card__img--large"
                 src="../assets/morsecode.png"
                 alt=""
               />
-              <p class="content__section__gallery__card__description">
+              <p class="card__description">
                 A web-page based Morse-Code Translator in html and JavaScript to
                 translate between English and morse code.
               </p>
-            </div></a
-          >
+            </div>
+          </a>
           <a
-            class="content__section__gallery__card--link"
+            class="card--link"
             href="https://github.com/Ammara-Haroon/portfolio.git"
             target="_blank"
           >
-            <div
-              class="content__section__gallery__card content__section__gallery__card--bordered content__section__gallery__card--clickable"
-            >
-              <h3
-                class="content__section__gallery__card__caption content__section__gallery__card__caption--large"
-              >
-                E-Shop
-              </h3>
+            <div class="card card--bordered card--clickable">
+              <h3 class="card__caption card__caption--large">E-Shop</h3>
               <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--large"
+                class="card__img card__img--large"
                 src="../assets/estore.png"
                 alt=""
               />
-              <p class="content__section__gallery__card__description">
+              <p class="card__description">
                 An e-store that sells books and toys online. It uses html, css
                 and Javascript.
               </p>
-            </div></a
-          >
+            </div>
+          </a>
           <a
-            class="content__section__gallery__card--link"
+            class="card--link"
             href="https://github.com/Ammara-Haroon/portfolio.git"
             target="_blank"
           >
-            <div
-              class="content__section__gallery__card content__section__gallery__card--bordered content__section__gallery__card--clickable"
-            >
-              <h3
-                class="content__section__gallery__card__caption content__section__gallery__card__caption--large"
-              >
+            <div class="card card--bordered card--clickable">
+              <h3 class="card__caption card__caption--large">
                 Morse-Code Translator
               </h3>
               <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--large"
+                class="card__img card__img--large"
                 src="../assets/morsecode.png"
                 alt=""
               />
-              <p class="content__section__gallery__card__description">
+              <p class="card__description">
                 A web-page based Morse-Code Translator in html and JavaScript to
                 translate between English and morse code.
               </p>
-            </div></a
-          >
+            </div>
+          </a>
         </div>
       </section>
 
-      <section
-        id="aboutMePage"
-        class="content__section content__section--mouse-grey"
-      >
-        <h2
-          class="content__section__heading content__section__heading--colored"
-        >
-          About Me
-        </h2>
-        <p class="content__section__text">
-          I’m a
-          <span class="content__section__text--bold"
-            >Sydney-based Junior Software Developer</span
-          >
-          and
-          <span class="content__section__text--bold"
-            >Microsoft Certified Power BI Data Analyst</span
-          >
-          with a passion for all things programming and data. Currently, I’m
-          honing my skills at the _nology.io bootcamp, where I’m diving deep
-          into the world of software development.<br /><br />I enjoy the mental
-          gymnastics of solving problems, whether it’s a Rubik’s Cube, a big
-          puzzle or a coding challenge. I love finding patterns and storytelling
-          from data. When I step away from the keyboard, you’ll find me tending
-          to my backyard oasis.
-        </p>
-        <h2 class="content__section__heading">Get in touch !</h2>
-
-        <div
-          class="content__section content__section--small content__section--bordered"
-        >
-          <div
-            id="contactPage"
-            class="content__section__gallery content__section__gallery--small"
-          >
-            <a
-              class="content__section__gallery__card--link"
-              href="https://github.com/Ammara-Haroon"
-              target="_blank"
+      <section id="aboutMePage" class="section section--dark">
+        <div class="section section--light section--small section--bordered">
+          <h2 class="section__heading section__heading--accented">About Me</h2>
+          <p class="section__text">
+            I’m a
+            <span class="section__text--bold"
+              >Sydney-based Junior Software Developer</span
             >
-              <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--small "
-                src="../assets/github-icon.png"
-                alt="github"
-              />
-            </a>
-            <a
-              class="content__section__gallery__card--link"
-              href="https://www.linkedin.com/in/ammara-haroon-2a64aa1b8/"
-              target="_blank"
+            and
+            <span class="section__text--bold"
+              >Microsoft Certified Power BI Data Analyst</span
             >
-              <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--small"
-                src="../assets/linkedin-square-icon.png"
-                alt="linkedin"
-              />
-            </a>
-            <a
-              id="emailIcon"
-              class="content__section__gallery__card--link"
-              href="#fullName"
-            >
-              <img
-                class="content__section__gallery__card__img content__section__gallery__card__img--small "
-                src="../assets/envelope-icon.png"
-                alt="email"
-              />
-            </a>
-          </div>
-
-          <div
-            id="contactForm"
-            class="content__section content__section--small"
-          >
-            <h4 class="content__section__heading">
-              Send a message and I'll definitely get back to you!
-            </h4>
-            <form class="content__section__form" method="Post">
-              <!--action="https://formspree.io/f/mrgnlory"-->
-              <div class="content__section__form__input">
-                <label
-                  class="content__section__form__input__label"
-                  for="fullName"
-                  >Full Name:
-                </label>
-                <input
-                  id="fullName"
-                  name="full_name"
-                  type="text"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="content__section__form__input">
-                <label class="content__section__form__input__label" for="email"
-                  >Email:
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="xyz@abc.com"
-                />
-              </div>
-              <div class="content__section__form__input">
-                <label
-                  class="content__section__form__input__label"
-                  for="message"
-                  >Message:
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  placeholder="How can I help?"
-                ></textarea>
-              </div>
-              <button
-                id="submitButton"
-                class="content__section__form__button"
-                type="submit"
+            with a passion for all things programming and data. Currently, I’m
+            honing my skills at the _nology.io bootcamp, where I’m diving deep
+            into the world of software development.<br /><br />I enjoy the
+            mental gymnastics of solving problems, whether it’s a Rubik’s Cube,
+            a big puzzle or a coding challenge. I love finding patterns and
+            storytelling from data. When I step away from the keyboard, you’ll
+            find me tending to my backyard oasis.
+          </p>
+          <h2 class="section__heading">Get in touch !</h2>
+          <div class="section section--dark section--small section--bordered">
+            <div id="contactPage" class="gallery gallery--small">
+              <a
+                class="card--link"
+                href="https://github.com/Ammara-Haroon"
+                target="_blank"
               >
-                Send
-              </button>
-            </form>
+                <img
+                  class="card__img card__img--small card__img--round"
+                  src="../assets/github-icon.png"
+                  alt="github"
+                />
+              </a>
+              <a
+                class="card--link"
+                href="https://www.linkedin.com/in/ammara-haroon-2a64aa1b8/"
+                target="_blank"
+              >
+                <img
+                  class="card__img card__img--small card__img--round"
+                  src="../assets/linkedin-square-icon.png"
+                  alt="linkedin"
+                />
+              </a>
+              <a id="emailIcon" class="card--link" href="#fullName">
+                <img
+                  class="card__img card__img--small card__img--round"
+                  src="../assets/envelope-icon.png"
+                  alt="email"
+                />
+              </a>
+            </div>
+            <div id="contactForm" class="section section--small">
+              <h4 class="section__heading--small section__heading--light">
+                Send a message and I'll definitely get back to you!
+              </h4>
+              <form
+                class="contact-form"
+                method="Post"
+                action="https://formspree.io/f/mrgnlory"
+              >
+                <div class="contact-form__input">
+                  <label class="contact-form__input__label" for="fullName"
+                    >Full Name:
+                  </label>
+                  <input
+                    id="fullName"
+                    name="full_name"
+                    type="text"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="contact-form__input">
+                  <label class="contact-form__input__label" for="email"
+                    >Email:
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="xyz@abc.com"
+                  />
+                </div>
+                <div class="contact-form__input">
+                  <label class="contact-form__input__label" for="message"
+                    >Message:
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="How can I help?"
+                  ></textarea>
+                </div>
+                <button
+                  id="submitButton"
+                  class="contact-form__button"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

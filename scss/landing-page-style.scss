@@ -1,0 +1,35 @@
+@use "./partials/variables" as var;
+
+.landing-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  background-color: var.$col-bkgd-light;
+
+  //elements
+  &__container {
+    height: 100vh;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1em;
+    &__text {
+      font-size: large;
+      font-weight: bold;
+    }
+    &__info {
+      &__name {
+        font-size: xxx-large;
+        text-align: right;
+        margin-top: 1em;
+        color: var.$col-accent;
+        margin-bottom: 0.1em;
+      }
+      &__title {
+        font-size: x-large;
+        text-align: right;
+      }
+    }
+  }
+}

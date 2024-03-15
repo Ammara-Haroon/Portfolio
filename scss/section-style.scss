@@ -1,0 +1,62 @@
+@use "./partials/variables" as var;
+@use "./partials/mixins" as mix;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 1em 2em 0;
+  min-height: 90vh;
+  justify-content: center;
+
+  //modifiers
+  &--small {
+    min-height: 10vh;
+    margin-bottom: 0.5em;
+    align-self: center;
+    padding: 1em;
+    width: var.$content-width;
+  }
+  &--dark {
+    background-color: var.$col-bkgd-dark;
+  }
+  &--light {
+    background-color: var.$col-bkgd-light;
+  }
+  &--bordered {
+    margin: 0.5em 0 0 0;
+    border: 7px solid var.$col-emphasis;
+    border-radius: 20px;
+  }
+
+  //elements
+  &__heading {
+    margin: 1em 1em 1em 0.4em;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: var.$col-emphasis;
+    //modifiers
+    &--accented {
+      @include mix.custom-color(var.$col-accent);
+    }
+    &--light {
+      @include mix.custom-color(var.$col-bkgd-light);
+    }
+    &--small {
+      font-size: 1.25em;
+      text-align: center;
+    }
+  }
+  &__text {
+    align-self: center;
+    text-justify: newspaper;
+    width: var.$content-width;
+    font-size: 1.25em;
+    font-weight: normal;
+    color: var.$col-txt-light;
+    &--bold {
+      font-weight: bold;
+      color: var.$col-primary;
+    }
+  }
+}
