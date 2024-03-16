@@ -345,6 +345,14 @@ template {
   color: #ea5455;
 }
 
+@keyframes become-visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .landing-page {
   display: flex;
   flex-direction: row;
@@ -360,8 +368,11 @@ template {
   margin-right: 1em;
 }
 .landing-page__container__text {
-  font-size: large;
+  font-size: xx-large;
   font-weight: bold;
+  opacity: 1;
+  animation-name: become-visible;
+  animation-duration: 3s;
 }
 .landing-page__container__info__name {
   font-size: xxx-large;
@@ -456,6 +467,8 @@ template {
 
 #contactForm {
   display: none;
+  opacity: 1;
+  animation: become-visible 3s linear;
 }
 
 .contact-form {
@@ -556,6 +569,10 @@ template {
   padding: 0;
   color: rgb(60, 79, 101);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

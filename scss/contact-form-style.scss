@@ -2,6 +2,8 @@
 
 #contactForm {
   display: none;
+  opacity: 1;
+  animation: become-visible 3s linear;
 }
 
 .contact-form {

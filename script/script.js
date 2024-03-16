@@ -25,3 +25,34 @@ emailIcon.addEventListener("click", () => {
     contactForm.style.display = "none";
   }
 });
+
+const textArr = ["Ammara Haroon", "Junior Software Developer"];
+
+const elementArr = [
+  //document.getElementsByClassName("landing-page__container__text")[0],
+  document.getElementsByClassName("landing-page__container__info__name")[0],
+  document.getElementsByClassName("landing-page__container__info__title")[0],
+];
+
+elementArr.forEach((item) => {
+  item.innerHTML = "";
+});
+const speed = [200, 100, 50];
+let txtInd = 0;
+let elemInd = 0;
+window.setTimeout(typeWriter, 1000);
+
+function typeWriter() {
+  if (txtInd < textArr[elemInd].length) {
+    elementArr[elemInd].innerHTML += textArr[elemInd].charAt(txtInd);
+    txtInd++;
+    window.setTimeout(typeWriter, speed[elemInd]);
+  } else {
+    txtInd = 0;
+    elemInd++;
+    if (elemInd < elementArr.length) {
+      window.setTimeout(typeWriter, 1000);
+    }
+  }
+  //console.log(elementArr[elemInd].innerHTML);
+}

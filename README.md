@@ -17,6 +17,7 @@ Potential employers and anybody who wants to follow my learning journey.
 - Uses BEM as a naming convention
 - Uses SCSS for styling
 - Should be resposive
+- Should have at least a landing page, about page, contact page, projects and skills page.
 
 # Design of the website
 
