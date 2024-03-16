@@ -21,7 +21,6 @@ btnSend.addEventListener("click", () => {
 emailIcon.addEventListener("click", () => {
   if (contactForm.style.display === "none") {
     contactForm.style.display = "flex";
-    console.dir(contactForm);
   } else {
     contactForm.style.display = "none";
   }
