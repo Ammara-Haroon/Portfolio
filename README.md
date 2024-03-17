@@ -45,8 +45,19 @@ Potential employers and anybody who wants to follow my learning journey.
 1. formspree.io website is used to manage the messages from contact form.
 1. Contact page links to github and linkedin have been added.
 1. All colors are put together is a separate \_variables.scss file for easy maintainence.
+1. Css animations and Javascript are used to add interactivity to the website.
+1. Media Queries are used to make the website more responsive for smaller screens.
 
-## Future Additions
+## Interesting Features
+
+1. Typing animation on the landing page
+1. Animated bouncing arrows to show scrolling direction.
+1. The projects gallery changes into a swiping gallery for smaller screens.
+1. A hidden message form opens up and appears smoothly when email icon is clicked.
+1. The message is sent to formspree.
+1. Smooth scrolling to all sections of the webpage.
+
+## Future Direction
 
 - The website uses placeholder images for the projects. These need to be replaced and linked to live websites and code-base.
 - The website needs to be deployed.

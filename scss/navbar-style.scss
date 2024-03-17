@@ -8,6 +8,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr;
+  z-index: 1;
 
   //elements
   &__name-logo {

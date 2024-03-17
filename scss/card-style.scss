@@ -2,6 +2,8 @@
 
 .card {
   margin: 1em;
+  max-width: fit-content;
+  min-width: fit-content;
 
   //modifiers
   &--clickable {
@@ -26,8 +28,12 @@
   &--tabbed {
     border: 7px solid var.$col-accent;
     border-radius: 5px;
-    padding: 2em;
+    padding: 1.5em;
     background-color: var.$col-bkgd-light;
+
+    @media only screen and (max-width: 570px) {
+      padding: 0.2em;
+    }
   }
 
   //elements
