@@ -21,6 +21,14 @@ Potential employers and anybody who wants to follow my learning journey.
 
 # Design of the website
 
+## Screenshots
+
+![Landing Page](image-1.png)
+![Skills Page](image-2.png)
+![Projects Page](image-3.png)
+![About Me Page](image-4.png)
+![Contact Me Page](image-5.png)
+
 ## Structure of the Website
 
 - Landing Page with name and title

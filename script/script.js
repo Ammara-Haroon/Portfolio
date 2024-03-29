@@ -26,8 +26,8 @@ emailIcon.addEventListener("click", () => {
 //types the name and title one character at a time
 const textArr = ["Ammara Haroon", "Junior Software Developer"];
 const elementArr = [
-  document.getElementsByClassName("landing-page__container__info__name")[0],
-  document.getElementsByClassName("landing-page__container__info__title")[0],
+  document.getElementsByClassName("info__name")[0],
+  document.getElementsByClassName("info__title")[0],
 ];
 const arrow = document.getElementsByClassName("arrow")[0];
 const speed = [200, 100, 50];

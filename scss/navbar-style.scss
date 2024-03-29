@@ -9,32 +9,31 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   z-index: 1;
-
-  //elements
-  &__name-logo {
-    color: var.$col-accent;
-    font-size: xx-large;
-    background-color: var.$col-bkgd-medium;
-    font-family: cursive;
-    padding: 2px;
-  }
   &__nav {
     background-color: var.$col-bkgd-medium;
     align-self: center;
-    &__menu {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      list-style-type: none;
-      margin: 0;
-      padding: 2px;
-      &__link {
-        text-decoration: none;
-      }
-      &__link:hover {
-        color: var.$col-accent;
-      }
-    }
+  }
+}
+.name-logo {
+  color: var.$col-accent;
+  font-size: xx-large;
+  background-color: var.$col-bkgd-medium;
+  font-family: cursive;
+  padding: 2px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  &__link {
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: var.$col-accent;
   }
 }

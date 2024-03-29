@@ -319,18 +319,20 @@ template {
   grid-template-columns: 1fr 5fr;
   z-index: 1;
 }
-.navbar__name-logo {
+.navbar__nav {
+  background-color: rgb(228, 220, 216);
+  align-self: center;
+}
+
+.name-logo {
   color: #ea5455;
   font-size: xx-large;
   background-color: rgb(228, 220, 216);
   font-family: cursive;
   padding: 2px;
 }
-.navbar__nav {
-  background-color: rgb(228, 220, 216);
-  align-self: center;
-}
-.navbar__nav__menu {
+
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -339,10 +341,10 @@ template {
   margin: 0;
   padding: 2px;
 }
-.navbar__nav__menu__link {
+.menu__link {
   text-decoration: none;
 }
-.navbar__nav__menu__link:hover {
+.menu__link:hover {
   color: #ea5455;
 }
 
@@ -379,8 +381,15 @@ template {
 .landing-page {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: center;
   background-color: rgb(249, 245, 235);
+}
+.landing-page__text {
+  font-size: xx-large;
+  font-weight: bold;
+  opacity: 1;
+  animation-name: become-visible;
+  animation-duration: 4s;
 }
 .landing-page__container {
   height: 100vh;
@@ -391,26 +400,20 @@ template {
   margin-right: 1em;
   overflow-y: clip;
 }
-.landing-page__container__text {
-  font-size: xx-large;
-  font-weight: bold;
-  opacity: 1;
-  animation-name: become-visible;
-  animation-duration: 4s;
-}
-.landing-page__container__info {
+
+.info {
   position: sticky;
   top: 0;
   right: 0;
 }
-.landing-page__container__info__name {
+.info__name {
   font-size: xxx-large;
   text-align: right;
   margin-top: 1em;
   color: #ea5455;
   margin-bottom: 0.1em;
 }
-.landing-page__container__info__title {
+.info__title {
   font-size: x-large;
   text-align: right;
 }
@@ -418,17 +421,13 @@ template {
 .arrow {
   text-align: center;
   position: absolute;
-  bottom: 0em;
-  right: 50%;
+  bottom: 0;
+  left: 90%;
+  overflow: hidden;
   color: #50727b;
   opacity: 0;
   font-weight: bold;
   font-size: xxx-large;
-}
-@media only screen and (max-width: 780px) {
-  .arrow {
-    right: 90%;
-  }
 }
 
 .bounce {
@@ -446,31 +445,6 @@ template {
 }
 .gallery--small {
   margin: 0;
-}
-@media only screen and (max-width: 900px) {
-  .gallery--large {
-    max-height: 40vh;
-    max-width: fit-content;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    gap: 0;
-    margin-top: 5em;
-    border: 7px solid rgb(51, 49, 59);
-  }
-}
-
-.scroll-arrows {
-  display: none;
-}
-@media screen and (max-width: 900px) {
-  .scroll-arrows {
-    font-weight: bold;
-    font-size: xxx-large;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em;
-    animation: swipe 3s infinite;
-  }
 }
 
 .card {
