@@ -30,6 +30,11 @@
     border-radius: 5px;
     padding: 1.5em;
     background-color: var.$col-bkgd-light;
+    transition: all ease-in 0.1s;
+    &:hover {
+      transform: scale(1.1);
+      background-color: var.$col-accent;
+    }
 
     @media only screen and (max-width: 570px) {
       padding: 0.2em;

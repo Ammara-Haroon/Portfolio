@@ -323,6 +323,12 @@ template {
   background-color: rgb(228, 220, 216);
   align-self: center;
 }
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .name-logo {
   color: #ea5455;
@@ -346,6 +352,31 @@ template {
 }
 .menu__link:hover {
   color: #ea5455;
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    background-color: rgb(228, 220, 216);
+    width: fit-content;
+    z-index: 1;
+    padding: 5px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu img {
+  height: 1em;
+  aspect-ratio: 1;
+  padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .mobile-menu {
+    display: block;
+  }
 }
 
 @keyframes become-visible {
@@ -422,7 +453,7 @@ template {
   text-align: center;
   position: absolute;
   bottom: 0;
-  left: 90%;
+  left: 50%;
   overflow: hidden;
   color: #50727b;
   opacity: 0;
@@ -474,6 +505,11 @@ template {
   border-radius: 5px;
   padding: 1.5em;
   background-color: rgb(249, 245, 235);
+  transition: all ease-in 0.1s;
+}
+.card--tabbed:hover {
+  transform: scale(1.1);
+  background-color: #ea5455;
 }
 @media only screen and (max-width: 570px) {
   .card--tabbed {

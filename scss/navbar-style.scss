@@ -13,6 +13,10 @@
     background-color: var.$col-bkgd-medium;
     align-self: center;
   }
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .name-logo {
   color: var.$col-accent;
@@ -35,5 +39,28 @@
   }
   &__link:hover {
     color: var.$col-accent;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+    position: fixed;
+    right: 0;
+    background-color: var.$col-bkgd-medium;
+    width: fit-content;
+    z-index: 1;
+    padding: 5px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  img {
+    height: 1em;
+    aspect-ratio: 1;
+    padding: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: block;
   }
 }

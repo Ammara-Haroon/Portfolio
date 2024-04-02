@@ -33,7 +33,7 @@ const arrow = document.getElementsByClassName("arrow")[0];
 const speed = [200, 100, 50];
 let txtInd = 0;
 let elemInd = 0;
-
+let isArrowCreated = false;
 elementArr.forEach((item) => {
   item.innerHTML = "";
 });
@@ -54,6 +54,40 @@ function typeWriter() {
     } else {
       //display bouncing arrow after typing is done
       arrow.style.opacity = "1";
+      isArrowCreated = true;
     }
   }
 }
+
+const mobileMenu = document.querySelector(".mobile-menu");
+const menu = document.querySelector(".menu");
+
+mobileMenu.addEventListener("click", () => {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+});
+
+menu.addEventListener("click", (e) => {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    return;
+  }
+});
+
+menu.addEventListener("mouseleave", () => {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    return;
+  }
+});
+
+addEventListener("scroll", (event) => {
+  if (arrow.getBoundingClientRect().top <= 200) {
+    arrow.style.opacity = "0";
+  } else if (isArrowCreated) {
+    arrow.style.opacity = "1";
+  }
+});
