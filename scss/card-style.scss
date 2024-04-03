@@ -24,6 +24,7 @@
   &--bordered {
     border: 7px solid var.$col-emphasis;
     border-radius: 5px;
+    transition: height width 0.3s;
   }
   &--tabbed {
     border: 7px solid var.$col-accent;
@@ -33,7 +34,7 @@
     transition: all ease-in 0.1s;
     &:hover {
       transform: scale(1.1);
-      background-color: var.$col-accent;
+      //background-color: var.$col-accent;
     }
 
     @media only screen and (max-width: 570px) {

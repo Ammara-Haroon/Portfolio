@@ -499,6 +499,7 @@ template {
 .card--bordered {
   border: 7px solid rgb(51, 49, 59);
   border-radius: 5px;
+  transition: height width 0.3s;
 }
 .card--tabbed {
   border: 7px solid #ea5455;
@@ -509,7 +510,6 @@ template {
 }
 .card--tabbed:hover {
   transform: scale(1.1);
-  background-color: #ea5455;
 }
 @media only screen and (max-width: 570px) {
   .card--tabbed {
@@ -571,6 +571,7 @@ template {
   border-radius: 7px;
   max-width: 100%;
   background-color: rgb(249, 245, 235);
+  transition: all 1s;
 }
 .contact-form__input {
   display: flex;
@@ -599,7 +600,7 @@ template {
 .section {
   display: flex;
   flex-direction: column;
-  padding: 3em 1em 2em 0;
+  padding: 1em 1em 2em 0;
   min-height: 90vh;
   justify-content: center;
 }
@@ -619,7 +620,7 @@ template {
 .section--bordered {
   margin: 0.5em 0 0 0;
   border: 7px solid rgb(51, 49, 59);
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .section__heading {
   margin: 1em 1em 1em 0.4em;
@@ -637,6 +638,11 @@ template {
 .section__heading--small {
   font-size: 1.25em;
   text-align: center;
+}
+.section__heading--animated {
+  transition: padding-left 1s;
+  padding-left: 0px;
+  text-align: left;
 }
 .section__text {
   align-self: center;

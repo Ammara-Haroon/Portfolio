@@ -15,7 +15,7 @@
   border-radius: 7px;
   max-width: 100%;
   background-color: var.$col-bkgd-light;
-
+  transition: all 1s;
   //elements
   &__input {
     display: flex;
