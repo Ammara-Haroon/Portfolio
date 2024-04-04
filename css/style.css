@@ -309,6 +309,25 @@ template {
   display: none;
 }
 
+@keyframes become-visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 .navbar {
   overflow: hidden;
   background-color: rgb(228, 220, 216);
@@ -379,36 +398,6 @@ template {
   }
 }
 
-@keyframes become-visible {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-@keyframes swipe {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-30px);
-  }
-  60% {
-    transform: translateX(-15px);
-  }
-}
 .landing-page {
   display: flex;
   flex-direction: row;
@@ -476,6 +465,8 @@ template {
 }
 .gallery--small {
   margin: 0;
+  height: fit-content;
+  padding: 0;
 }
 
 .card {
@@ -608,8 +599,9 @@ template {
   min-height: 10vh;
   margin-bottom: 0.5em;
   align-self: center;
-  padding: 1em;
+  padding: 0em;
   width: 70%;
+  height: fit-content;
 }
 .section--dark {
   background-color: rgb(55, 65, 80);

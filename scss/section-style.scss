@@ -13,8 +13,9 @@
     min-height: 10vh;
     margin-bottom: 0.5em;
     align-self: center;
-    padding: 1em;
+    padding: 0em;
     width: var.$content-width;
+    height: fit-content;
   }
   &--dark {
     background-color: var.$col-bkgd-dark;

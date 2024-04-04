@@ -1,5 +1,6 @@
 @use "./normalize.scss";
 @use "./partials/variables" as var;
+@use "./partials/keyframes" as kf;
 @use "./navbar-style.scss";
 @use "./landing-page-style.scss";
 @use "./gallery-style.scss";
@@ -17,10 +18,4 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-#aboutMePage {
-  //rotate: -45deg;
-}
-#contactPage {
 }
