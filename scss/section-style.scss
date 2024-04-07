@@ -58,8 +58,9 @@
     align-self: center;
     text-justify: newspaper;
     width: var.$content-width;
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-weight: normal;
+    font-family: arial;
     color: var.$col-txt-light;
     &--bold {
       font-weight: bold;

@@ -86,6 +86,7 @@ menu.addEventListener("mouseleave", () => {
 const animatedHeadings = document.querySelectorAll(
   ".section__heading--animated"
 );
+const movingDivsFromLeft = document.querySelector(".animated-left");
 
 addEventListener("scroll", (event) => {
   if (
@@ -96,14 +97,14 @@ addEventListener("scroll", (event) => {
   } else if (isArrowCreated) {
     arrow.style.opacity = "1";
   }
-  console.log(animatedHeadings);
+  //console.log(animatedHeadings);
   animatedHeadings.forEach((heading) => {
-    console.log(
-      "top",
-      window.innerHeight -
-        heading.getBoundingClientRect().top -
-        4 * Number(getComputedStyle(heading).fontSize.replace("px", ""))
-    );
+    // console.log(
+    //   "top",
+    //   window.innerHeight -
+    //     heading.getBoundingClientRect().top -
+    //     4 * Number(getComputedStyle(heading).fontSize.replace("px", ""))
+    // );
 
     if (
       window.innerHeight -
@@ -111,21 +112,6 @@ addEventListener("scroll", (event) => {
         4 * Number(getComputedStyle(heading).fontSize.replace("px", "")) >=
       0
     ) {
-      // let padding =
-      //   window.innerHeight -
-      //   heading.getBoundingClientRect().top -
-      //   4 * Number(getComputedStyle(heading).fontSize.replace("px", ""));
-
-      // heading.style.paddingLeft =
-      //   padding <=
-      //   0.5 * window.innerWidth -
-      //     0.3 *
-      //       heading.innerText.length *
-      //       Number(getComputedStyle(heading).fontSize.replace("px", ""))
-      //     ? `${padding}px`
-      //     : heading.style.paddingLeft;
-      // //console.log("padding", heading.style.paddingLeft);
-
       heading.style.paddingLeft = `${
         0.5 * window.innerWidth -
         0.3 *
@@ -136,4 +122,17 @@ addEventListener("scroll", (event) => {
       heading.style.paddingLeft = `0`;
     }
   });
+
+  if (
+    movingDivsFromLeft.getBoundingClientRect().top -
+      0.75 *
+        Number(getComputedStyle(movingDivsFromLeft).height.replace("px", "")) <
+    0
+  ) {
+    movingDivsFromLeft.style.opacity = 1;
+    movingDivsFromLeft.style.translate = "21%";
+  } else {
+    movingDivsFromLeft.style.translate = "-100%";
+    movingDivsFromLeft.style.opacity = 0;
+  }
 });

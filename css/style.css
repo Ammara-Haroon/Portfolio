@@ -640,8 +640,9 @@ template {
   align-self: center;
   text-justify: newspaper;
   width: 70%;
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: normal;
+  font-family: arial;
   color: #50727b;
 }
 .section__text--bold {
@@ -663,6 +664,12 @@ template {
 
 html {
   scroll-behavior: smooth;
+}
+
+.animated-left {
+  align-self: flex-start;
+  opacity: 0;
+  transition: all 2s;
 }
 
 /*# sourceMappingURL=style.css.map */

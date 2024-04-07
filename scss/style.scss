@@ -19,3 +19,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+.animated-left {
+  align-self: flex-start;
+  opacity: 0;
+  transition: all 2s;
+}
