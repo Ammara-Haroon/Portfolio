@@ -2,9 +2,8 @@
 
 .card {
   margin: 1em;
-  max-width: fit-content;
-  min-width: fit-content;
-
+  // max-width: fit-content;
+  // min-width: fit-content;
   //modifiers
   &--clickable {
     &:hover {
@@ -13,9 +12,13 @@
     }
     &:hover > h3 {
       color: var.$col-accent;
+      border-color: var.$col-accent;
     }
     &:hover > img {
       border-top-color: var.$col-accent;
+    }
+    &:hover p {
+      display: flex;
     }
   }
   &--link {
@@ -34,6 +37,7 @@
     transition: all ease-in 0.1s;
     &:hover {
       transform: scale(1.1);
+
       //background-color: var.$col-accent;
     }
 
@@ -43,6 +47,17 @@
   }
 
   //elements
+  h3 {
+    border-bottom: 5px solid var.$col-emphasis;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 750px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &__img {
     //modifiers
     &--small {
@@ -52,10 +67,10 @@
     &--large {
       width: 15em;
       height: 20em;
-      border-left: 0;
-      border-right: 0;
-      border-bottom: 5px solid var.$col-emphasis;
-      border-top: 5px solid var.$col-emphasis;
+      //border-left: 0;
+      border-right: 1px solid var.$col-emphasis;
+      //border-bottom: 5px solid var.$col-emphasis;
+      //border-top: 5px solid var.$col-emphasis;
     }
     &--round {
       border: 7px solid var.$col-bkgd-dark;
@@ -80,11 +95,20 @@
   }
   &__description {
     word-wrap: normal;
-    width: 14.6em;
-    height: 5em;
-    padding: 0.2em;
-    color: var.$col-txt-light;
+    width: 15em;
+    height: 100%; //5em;
+    //
     color: var.$col-primary;
     background-color: var.$col-bkgd-medium;
+    font-family: Roboto; //Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    //display: none;
+    @media only screen and (max-width: 750px) {
+      padding: 0.5em;
+    }
   }
 }

@@ -23,6 +23,14 @@
   &--light {
     background-color: var.$col-bkgd-light;
   }
+  &--textured {
+    background-image: linear-gradient(
+      to right,
+      var.$col-bkgd-dark,
+      var.$col-accent,
+      var.$col-bkgd-dark //rgba(145, 10, 103, 1)
+    );
+  }
   &--bordered {
     margin: 0.5em 0 0 0;
     border: 7px solid var.$col-emphasis;
@@ -61,10 +69,11 @@
     font-size: 1.1em;
     font-weight: normal;
     font-family: arial;
-    color: var.$col-txt-light;
+    color: rgb(41, 53, 67);
+
     &--bold {
       font-weight: bold;
-      color: var.$col-primary;
+      color: var.$col-emphasis;
     }
   }
 }

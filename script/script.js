@@ -125,9 +125,8 @@ addEventListener("scroll", (event) => {
 
   if (
     movingDivsFromLeft.getBoundingClientRect().top -
-      0.75 *
-        Number(getComputedStyle(movingDivsFromLeft).height.replace("px", "")) <
-    0
+      Number(getComputedStyle(movingDivsFromLeft).height.replace("px", "")) <
+    200
   ) {
     movingDivsFromLeft.style.opacity = 1;
     movingDivsFromLeft.style.translate = "21%";
@@ -135,4 +134,10 @@ addEventListener("scroll", (event) => {
     movingDivsFromLeft.style.translate = "-100%";
     movingDivsFromLeft.style.opacity = 0;
   }
+});
+
+const closeBtn = document.querySelector("#close-btn");
+closeBtn.addEventListener("click", () => {
+  contactForm.style.display = "none";
+  contactForm.style.opacity = "0";
 });

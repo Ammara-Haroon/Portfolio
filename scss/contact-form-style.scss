@@ -3,19 +3,34 @@
 #contactForm {
   display: none;
   opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  //position: fixed;
   animation: become-visible 2s linear;
   animation-delay: 50ms;
+  background-color: rgba(51, 49, 59, 0.7);
 }
-
+#close-btn {
+  text-align: right;
+  padding: 0.1em;
+  color: var.$col-emphasis;
+  background-color: var.$col-txt-light;
+  &:hover {
+    cursor: pointer;
+    color: var.$col-accent;
+  }
+}
 .contact-form {
+  width: 70%;
+  //height: 70%;
   display: grid;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-rows: 0.1fr 1fr 1fr 4fr;
   align-self: center;
   border: 4px solid var.$col-emphasis;
   border-radius: 7px;
   max-width: 100%;
   background-color: var.$col-bkgd-light;
-  transition: all 1s;
+  transition: opacity 0.5s;
   //elements
   &__input {
     display: flex;
@@ -34,10 +49,12 @@
   }
   &__button {
     background-color: var.$col-txt-light;
-    color: var.$col-bkgd-light;
+    color: var.$col-emphasis;
+    border: 1px solid var.$col-emphasis;
     &:hover {
       color: var.$col-accent;
-      box-shadow: 1px 1px 5px 5px;
+      box-shadow: 1px 1px 1px 1px;
+      border: 1px solid var.$col-accent;
     }
   }
 }

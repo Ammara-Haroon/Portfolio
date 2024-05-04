@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   gap: 3em;
   width: var.$content-width;
+  width: 80%;
 
   //modifiers
   &--small {
@@ -15,7 +16,9 @@
     height: fit-content;
     padding: 0;
   }
-
+  &--large {
+    width: 100%;
+  }
   // &--large {
   //   @media only screen and (max-width: 900px) {
   //     max-height: 40vh;
