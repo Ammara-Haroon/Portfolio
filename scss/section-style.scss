@@ -77,3 +77,28 @@
     }
   }
 }
+
+#aboutMeContainer {
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+#contactPage {
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    box-sizing: border-box;
+    .gallery {
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+#skillsPage {
+  @media only screen and (max-width: 400px) {
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

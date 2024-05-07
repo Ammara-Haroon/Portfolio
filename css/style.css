@@ -475,17 +475,16 @@ template {
 
 .card {
   margin: 1em;
+  transition: all 0.3s;
 }
 .card--clickable:hover {
   box-shadow: 2px 2px 10px 2px;
   border-color: #ea5455;
+  scale: 1.1;
 }
-.card--clickable:hover > h3 {
+.card--clickable:hover h3 {
   color: #ea5455;
   border-color: #ea5455;
-}
-.card--clickable:hover > img {
-  border-top-color: #ea5455;
 }
 .card--clickable:hover p {
   display: flex;
@@ -511,20 +510,11 @@ template {
 @media only screen and (max-width: 570px) {
   .card--tabbed {
     padding: 0.2em;
+    text-align: center;
   }
 }
 .card h3 {
   border-bottom: 5px solid rgb(51, 49, 59);
-}
-.card__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-@media only screen and (max-width: 750px) {
-  .card__container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .card__img--small {
   width: 4em;
@@ -553,23 +543,53 @@ template {
   color: rgb(249, 245, 235);
   background-color: rgb(60, 79, 101);
 }
+.card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 750px) {
+  .card__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .card__description {
-  word-wrap: normal;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(228, 220, 216);
   width: 15em;
   height: 100%;
+}
+.card__description p {
+  word-wrap: normal;
   color: rgb(60, 79, 101);
-  background-color: rgb(228, 220, 216);
   font-family: Roboto;
   font-size: medium;
   text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
 }
 @media only screen and (max-width: 750px) {
-  .card__description {
+  .card__description p {
     padding: 0.5em;
   }
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5px;
+}
+.link-container a img {
+  width: 40px;
+  height: 40px;
+  border: 7px solid rgb(228, 220, 216);
+  border-radius: 50%;
+}
+.link-container a img:hover {
+  border-color: rgb(60, 79, 101);
 }
 
 #contactForm {
@@ -622,12 +642,11 @@ template {
 .contact-form__button {
   background-color: #50727b;
   color: rgb(51, 49, 59);
-  border: 1px solid rgb(51, 49, 59);
+  border: 2px solid rgb(51, 49, 59);
 }
 .contact-form__button:hover {
   color: #ea5455;
-  box-shadow: 1px 1px 1px 1px;
-  border: 1px solid #ea5455;
+  border: 2px solid #ea5455;
 }
 
 .section {
@@ -693,6 +712,31 @@ template {
 .section__text--bold {
   font-weight: bold;
   color: rgb(51, 49, 59);
+}
+
+@media only screen and (max-width: 500px) {
+  #aboutMeContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #contactPage {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #contactPage .gallery {
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #skillsPage .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .footer__copyright {

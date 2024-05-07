@@ -89,6 +89,10 @@ const animatedHeadings = document.querySelectorAll(
 const movingDivsFromLeft = document.querySelector(".animated-left");
 
 addEventListener("scroll", (event) => {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  }
+ 
   if (
     arrow.getBoundingClientRect().top <=
     3 * Number(getComputedStyle(arrow).height.replace("px", ""))
@@ -122,16 +126,20 @@ addEventListener("scroll", (event) => {
       heading.style.paddingLeft = `0`;
     }
   });
-
+  console.log(screen.width);
   if (
     movingDivsFromLeft.getBoundingClientRect().top -
       Number(getComputedStyle(movingDivsFromLeft).height.replace("px", "")) <
     200
   ) {
+    if (screen.width > 500) {
+      movingDivsFromLeft.style.translate = "20.3%";
+    }
     movingDivsFromLeft.style.opacity = 1;
-    movingDivsFromLeft.style.translate = "21%";
   } else {
-    movingDivsFromLeft.style.translate = "-100%";
+    if (screen.width > 500) {
+      movingDivsFromLeft.style.translate = "-100%";
+    }
     movingDivsFromLeft.style.opacity = 0;
   }
 });

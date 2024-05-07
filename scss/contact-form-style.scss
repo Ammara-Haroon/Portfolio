@@ -50,11 +50,11 @@
   &__button {
     background-color: var.$col-txt-light;
     color: var.$col-emphasis;
-    border: 1px solid var.$col-emphasis;
+    border: 2px solid var.$col-emphasis;
     &:hover {
       color: var.$col-accent;
-      box-shadow: 1px 1px 1px 1px;
-      border: 1px solid var.$col-accent;
+      //box-shadow: 1px 1px 1px 1px;
+      border: 2px solid var.$col-accent;
     }
   }
 }

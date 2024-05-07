@@ -5,18 +5,19 @@
   // max-width: fit-content;
   // min-width: fit-content;
   //modifiers
+  transition:all 0.3s;
   &--clickable {
     &:hover {
       box-shadow: 2px 2px 10px 2px;
       border-color: var.$col-accent;
+      scale:1.1;
+     // rotate:10deg;
     }
-    &:hover > h3 {
+    &:hover h3 {
       color: var.$col-accent;
       border-color: var.$col-accent;
     }
-    &:hover > img {
-      border-top-color: var.$col-accent;
-    }
+    
     &:hover p {
       display: flex;
     }
@@ -35,14 +36,15 @@
     padding: 1.5em;
     background-color: var.$col-bkgd-light;
     transition: all ease-in 0.1s;
+
     &:hover {
       transform: scale(1.1);
-
       //background-color: var.$col-accent;
     }
 
     @media only screen and (max-width: 570px) {
       padding: 0.2em;
+      text-align: center;
     }
   }
 
@@ -50,14 +52,7 @@
   h3 {
     border-bottom: 5px solid var.$col-emphasis;
   }
-  &__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media only screen and (max-width: 750px) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
+
   &__img {
     //modifiers
     &--small {
@@ -82,6 +77,7 @@
   }
 
   //elements
+
   &__caption {
     font-weight: bold;
     font-size: medium;
@@ -93,22 +89,51 @@
       background-color: var.$col-primary;
     }
   }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 750px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &__description {
-    word-wrap: normal;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var.$col-bkgd-medium;
     width: 15em;
     height: 100%; //5em;
-    //
-    color: var.$col-primary;
-    background-color: var.$col-bkgd-medium;
-    font-family: Roboto; //Arial, Helvetica, sans-serif;
-    font-size: medium;
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    //display: none;
-    @media only screen and (max-width: 750px) {
-      padding: 0.5em;
+    p {
+      word-wrap: normal;
+      color: var.$col-primary;
+      font-family: Roboto; //Arial, Helvetica, sans-serif;
+      font-size: medium;
+      text-align: center;
+      @media only screen and (max-width: 750px) {
+        padding: 0.5em;
+      }
+    }
+  }
+}
+.link-container {
+  //align-self: flex-end;
+  //justify-self: end;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5px;
+  a {
+    img {
+      width: 40px;
+      height: 40px;
+      border: 7px solid var.$col-bkgd-medium;
+      border-radius: 50%;
+      &:hover {
+        border-color: var.$col-primary;
+      }
     }
   }
 }
