@@ -482,12 +482,14 @@ template {
   border-color: #ea5455;
   scale: 1.1;
 }
+.card--clickable:hover {
+  box-shadow: 2px 2px 10px 2px;
+  border-color: #ea5455;
+  scale: 1.1;
+}
 .card--clickable:hover h3 {
   color: #ea5455;
   border-color: #ea5455;
-}
-.card--clickable:hover p {
-  display: flex;
 }
 .card--link {
   text-decoration: none;

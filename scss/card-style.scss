@@ -13,14 +13,18 @@
       scale:1.1;
      // rotate:10deg;
     }
+    &:hover {
+      box-shadow: 2px 2px 10px 2px;
+      border-color: var.$col-accent;
+      scale:1.1;
+     // rotate:10deg;
+    }
     &:hover h3 {
       color: var.$col-accent;
       border-color: var.$col-accent;
     }
     
-    &:hover p {
-      display: flex;
-    }
+    
   }
   &--link {
     text-decoration: none;
