@@ -477,19 +477,21 @@ template {
   margin: 1em;
   transition: all 0.3s;
 }
-.card--clickable:hover {
-  box-shadow: 2px 2px 10px 2px;
-  border-color: #ea5455;
-  scale: 1.1;
-}
-.card--clickable:hover {
-  box-shadow: 2px 2px 10px 2px;
-  border-color: #ea5455;
-  scale: 1.1;
-}
-.card--clickable:hover h3 {
-  color: #ea5455;
-  border-color: #ea5455;
+@media only screen and (min-width: 767px) {
+  .card--clickable:hover {
+    box-shadow: 2px 2px 10px 2px;
+    border-color: #ea5455;
+    scale: 1.1;
+  }
+  .card--clickable:hover {
+    box-shadow: 2px 2px 10px 2px;
+    border-color: #ea5455;
+    scale: 1.1;
+  }
+  .card--clickable:hover h3 {
+    color: #ea5455;
+    border-color: #ea5455;
+  }
 }
 .card--link {
   text-decoration: none;
@@ -506,8 +508,10 @@ template {
   background-color: rgb(249, 245, 235);
   transition: all ease-in 0.1s;
 }
-.card--tabbed:hover {
-  transform: scale(1.1);
+@media only screen and (min-width: 767px) {
+  .card--tabbed:hover {
+    transform: scale(1.1);
+  }
 }
 @media only screen and (max-width: 570px) {
   .card--tabbed {
@@ -563,7 +567,11 @@ template {
   justify-content: center;
   background-color: rgb(228, 220, 216);
   width: 15em;
-  height: 100%;
+}
+@media only screen and (max-width: 750px) {
+  .card__description {
+    height: 180px;
+  }
 }
 .card__description p {
   word-wrap: normal;
@@ -583,6 +591,12 @@ template {
   justify-content: space-around;
   width: 100%;
   padding: 5px;
+}
+@media only screen and (max-width: 750px) {
+  .link-container {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
 }
 .link-container a img {
   width: 40px;
