@@ -504,9 +504,16 @@ template {
 .card--tabbed {
   border: 7px solid #ea5455;
   border-radius: 5px;
-  padding: 1.5em;
+  padding: 0.5em;
   background-color: rgb(249, 245, 235);
   transition: all ease-in 0.1s;
+  box-sizing: border-box;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 @media only screen and (min-width: 767px) {
   .card--tabbed:hover {
@@ -516,7 +523,8 @@ template {
 @media only screen and (max-width: 570px) {
   .card--tabbed {
     padding: 0.2em;
-    text-align: center;
+    height: 120px;
+    width: 100px;
   }
 }
 .card h3 {
