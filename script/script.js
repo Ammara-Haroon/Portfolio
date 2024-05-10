@@ -24,7 +24,7 @@ emailIcon.addEventListener("click", () => {
 });
 
 //types the name and title one character at a time
-const textArr = ["Ammara Haroon", "Junior Software Developer"];
+const textArr = ["Ammara Haroon", "Full-Stack Software Developer"];
 const elementArr = [
   document.getElementsByClassName("info__name")[0],
   document.getElementsByClassName("info__title")[0],
