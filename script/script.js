@@ -126,7 +126,7 @@ addEventListener("scroll", (event) => {
       heading.style.paddingLeft = `0`;
     }
   });
-  console.log(screen.width);
+  //console.log(screen.width);
   if (
     movingDivsFromLeft.getBoundingClientRect().top -
       Number(getComputedStyle(movingDivsFromLeft).height.replace("px", "")) <
